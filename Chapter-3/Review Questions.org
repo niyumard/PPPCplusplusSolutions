@@ -33,11 +33,11 @@ A region of the memory that has a specific type.
 * What is a literal?
 "A notation for representing a fixed value in source code." per Wikipedia
 * What kinds of literals are there?
-1. Integer literals (=int_var=3=)
-2. Floating-point literals (=double float_var=3.4=)
-3. Boolean literals (=bool bool_var=true=)
-4. Character literals (=char char_var='c'=)
-5. String literals (=string string_var="string"=)
+1. Integer literals (=int_var = 3=)
+2. Floating-point literals (=double float_var = 3.4=)
+3. Boolean literals (=bool bool_var = true=)
+4. Character literals (=char char_var = 'c'=)
+5. String literals (=string string_var = "string"=)
 6. The pointer literal (=int* nullptr_var = NULL;=)
 * What is a variable?
 A named object is called a variable.
