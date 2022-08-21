@@ -4,7 +4,7 @@
 This is currently a work in progress, but hopefully by the time you read this, I will have published the answers to every exercise, drill, and review question from chapter 3 to the end of the book.
 
 ## Where is this repo located?
-This repo originally exists on [Codeberg](https://codeberg.org/hossein/PPPCplusplusSolutions/src/branch/main), however it's also mirrored on my GitHub account since some people use GitHub's search instead of a search engine. 
+This repo originally exists on [Codeberg](https://codeberg.org/hossein/PPPCplusplusSolutions/src/branch/main), however it's also mirrored on my GitHub account since some people use GitHub's search instead of a search engine. Please send any pull request that you might have to the original repo on Codeberg.
 
 ## Notes
 1. I have used GCC 11.3.0, GNU dialect of -std=c++17, to compile the pieces of code in this repository.
@@ -13,4 +13,5 @@ This repo originally exists on [Codeberg](https://codeberg.org/hossein/PPPCplusp
 
 ## License
 It is obvious that I don't own the copyright to questions from Bjarne Stroustrup's book, their order, or even some of my answers that I have relied heavily on the text of the book to write.
+
 The material that is not under the book's copyright, that is, the parts that are my own work, are published under the Creative Commons Zero v1.0 Universal license. I chose this license because it's applicable to both text and software.
