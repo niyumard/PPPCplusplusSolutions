@@ -12,4 +12,5 @@ This repo originally exists on [Codeberg](https://codeberg.org/hossein/PPPCplusp
 3. The answers in the beginning chapters could improve substantially if one were to use the concepts introduced in the next chapters, but I have also avoided this in order to stick to the material in the book.
 
 ## License
-It is obvious that I don't own the copyright to questions from Bjarne Stroustrup's book, their order, or even some of my answers that I have relied heavily on the text of the book to write. The material that is not under the book's copyright, that is, the parts that are my own work, are published under the Creative Commons Zero v1.0 Universal license. I chose this license because it's applicable to both text and software.
+It is obvious that I don't own the copyright to questions from Bjarne Stroustrup's book, their order, or even some of my answers that I have relied heavily on the text of the book to write.
+The material that is not under the book's copyright, that is, the parts that are my own work, are published under the Creative Commons Zero v1.0 Universal license. I chose this license because it's applicable to both text and software.
