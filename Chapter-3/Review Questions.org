@@ -57,7 +57,7 @@ A statement that introduces a new variable into the program, gives it a name, an
 * What is an initialization and how does it differ from an assignment?
 Initialization is giving a variable its initial value, assignment is removing the initial value and giving the variable a new value.
 * What is string concatenation and how do you make it work in C++?
-When you make two strings join end to end, you concatenate them. Doing so is possible with =+= operator in C++. ="String1" + "String2"="String1String2"=
+When you make two strings join end to end, you concatenate them. Doing so is possible with =+= operator in C++. ="String1" + "String2"\="String1String2"=
 * Which of the following are legal names in C++? If a name is not legal, why not?
 | Name                | Feasibility                                                                     |
 |---------------------+---------------------------------------------------------------------------------|
