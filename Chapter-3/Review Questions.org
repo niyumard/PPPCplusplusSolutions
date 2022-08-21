@@ -1,0 +1,88 @@
+#+title: Review Questions - Chapter 3
+* What is meant by the term prompt?
+A part of the program that asks (prompts) the user to take an action.
+* Which operator do you use to read into a variable?
+The input (also called insertion or extraction) operation =>>=.
+* If you want the user to input an integer value into your program for a variable named number, what are two lines of code you could write to ask the user to do it and to input the value into your program?
+#+begin_src cpp
+   #include<iostream>
+   using namespace std;
+   int main(){
+       int number;
+       cout << "Enter a number:";
+       cin >> number;
+   }
+#+end_src
+* What is =\n= called and what purpose does it serve?
+=\n= is an escape sequence that creates a new line when it comes in a string literal.
+* What terminates input into a string?
+Reading of strings (using =cin=) is terminated by a /whitespace/. A tab, newline or a space.
+* What terminates input into an integer?
+Either a whitespace or a character or a string that can't be put into an integer.
+* How would you write the code below as a single line of code?
+#+begin_src cpp
+    cout << "Hello, ";
+    cout << first_name;
+    cout << "!\n";
+#+end_src
+#+begin_src cpp
+    cout << "Hello, " << first_name << "!\n";
+#+end_src
+* What is an object?
+A region of the memory that has a specific type.
+* What is a literal?
+"A notation for representing a fixed value in source code." per Wikipedia
+* What kinds of literals are there?
+1. Integer literals (=int_var=3=)
+2. Floating-point literals (=double float_var=3.4=)
+3. Boolean literals (=bool bool_var=true=)
+4. Character literals (=char char_var='c'=)
+5. String literals (=string string_var="string"=)
+6. The pointer literal (=int* nullptr_var = NULL;=)
+* What is a variable?
+A named object is called a variable.
+* What are typical sizes for a char, an int, and a double?
+| type   | size in bytes |
+|--------+---------------|
+| int    |             4 |
+| char   |             1 |
+| double |             4 |
+| bool   |             1 |
+* What measures do we use for the size of small entities in memory, such as ints and strings?
+Byte which itself is 8 bits.
+* What is the difference between = and ==?
+   === assigns a value to the variable, where as ==== checks if there's an equality relationship
+* What is a definition?
+A statement that introduces a new variable into the program, gives it a name, and asks the computer to set aside some part of the memory for it.
+* What is an initialization and how does it differ from an assignment?
+Initialization is giving a variable its initial value, assignment is removing the initial value and giving the variable a new value.
+* What is string concatenation and how do you make it work in C++?
+When you make two strings join end to end, you concatenate them. Doing so is possible with =+= operator in C++. ="String1" + "String2" == "String1String2"=
+* Which of the following are legal names in C++? If a name is not legal, why not?
+| Name                | Feasibility                                                                     |
+|---------------------+---------------------------------------------------------------------------------|
+| =1.This_little_pig= | Should not start with a number                                                  |
+| =This_1_is fine=    | Should not include space                                                        |
+| =2_For_1_special=   | Should not start with a number                                                  |
+| =latest thing=      | Should not include space                                                        |
+| =the_$12_method=    | OK in some compilers but should be avoided ($ is not standard implementation)   |
+| =_this_is_ok=       | OK                                                                              |
+| =MiniMineMine=      | OK                                                                              |
+| =number=            | OK                                                                              |
+| =correct?=          | Should not include chars other than the alphabet, ten digits, and the underline |
+* Give five examples of legal names that you shouldn’t use because they are likely to cause confusion.
+1. =_foo= and other variable names starting with an underscore might cause conflicts with system code.
+2. =l1= is confusing because =1= and =l= look so similar.
+3. =li= is confusing because =i= and =l= look so similar.
+4. =x0o= is confusing because =0= and =o= look so similar.
+5. =$x= is allowed by some compilers but should be avoided since it's not standard practice.
+6. =THISVARIABLE= is better to be avoided since all-caps variable names are conventionally used for macros.
+* What are some good rules for choosing names?
+One should avoid meaningless names, abbreviations, as well as very long names.  It is usually good to follow a certain style guide.
+* What is type safety and why is it important?
+Every object has a type. A program is type safe if each object is used according to rules of their type. Writing programs that are not type safe can even cause hardware errors.
+* Why can conversion from double to int be a bad thing?
+A double loses some of the information once it's turned into an int and this can make our program's behavior unpredictable.
+Using universal initializers (=int a{10}=) to initialize the variables and always initializing variables except when immediate input by user happens helps avoit this pitfall.
+* Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+Types that have larger sizes can accept other types but not vice versa.
